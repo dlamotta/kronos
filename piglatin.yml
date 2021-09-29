@@ -6,5 +6,5 @@
   
   tasks:
   - name: Translate
-    ansible.builtin.shell: perl /usr/local/share/piglatin.pl {{ message }}
+    ansible.builtin.shell: perl /home/azureuser/piglatin.pl {{ message }}
 ...
