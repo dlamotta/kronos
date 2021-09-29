@@ -1,0 +1,10 @@
+---
+- name: Invokes Pig Latin translator CLI
+  hosts: all
+  vars: 
+    message: Hello Pig Latin World
+  
+  tasks:
+  - name: Translate
+    ansible.builtin.shell: perl /usr/local/share/piglatin.pl {{ message }}
+...
