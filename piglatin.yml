@@ -7,4 +7,8 @@
   tasks:
   - name: Translate
     ansible.builtin.shell: perl /home/azureuser/cli/piglatin.pl {{ message }}
+    register: response
+    
+  - debug:
+    msg: "{{ response.stdout }}"
 ...
