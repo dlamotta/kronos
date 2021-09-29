@@ -6,7 +6,7 @@
   
   tasks:
   - name: Translate message
-    ansible.builtin.shell: perl /home/azureuser/cli/piglatin.pl {{ message }}
+    ansible.builtin.shell: perl /home/azureuser/cli/piglatin.pl "{{ message }}"
     register: response
 
   - name: Print translated message
