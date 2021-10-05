@@ -1,6 +1,7 @@
 ---
 - name: Invokes Pig Latin translator CLI
   hosts: all
+  gather_facts: false
   vars: 
     message: Hello Pig Latin World
   
